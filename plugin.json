@@ -1,10 +1,10 @@
 {
     "name": "Declarative related questions",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Generate new questions related to last user question but always considering the declarative memory as context. The questions are in json format.",
     "author_name": "NuvolaProejct",
     "author_url": "https://nuvolaproject.cloud",
     "plugin_url": "https://github.com/mc9625/declarative_questions_plugin",
     "tags": "cat, related questions",
-    "thumb": "https://raw.githubusercontent.com/mc9625/aibook-related-questions/my_plugin.png"
+    "thumb": "https://raw.githubusercontent.com/mc9625/aibook-related-questions/nuvolacat.png"
 }

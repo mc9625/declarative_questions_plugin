@@ -18,3 +18,11 @@ The second threshold is used to make the conversation even more thematic. All pr
 [This part of the code is strictly mutuated from Mock Turtle plugin by ironblaster.
 https://github.com/ironblaster/mock_turtle]
 
+The questions are generated in json format:
+
+{questions:[]}
+
+You should retrieve these questions on the client side.
+
+
+
