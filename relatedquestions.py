@@ -6,6 +6,7 @@ class MySettings(BaseModel):
     threshold_declarative_memories: float = 0.82
     quick_no_reply_string : str = "Non parlo di questi argomenti."
     number_of_related_questions: int = 4
+    
 
 
 @plugin
@@ -21,7 +22,7 @@ def before_cat_sends_message(final_output, cat):
     global related_questions
     setting = cat.mad_hatter.plugins["declarative_questions_plugin"].load_settings()
     if is_a_question and len(declarative_memories_str) > 0:
-            related_questions = str(cat.llm("starting from the message " + message + " write "+ setting["number_of_related_questions"]+ " related questions considering this context: " + declarative_memories_str + " Return the questions always in Italian and in a json format {\"questions\":[]}."))
+            related_questions = str(cat.llm("starting from the message " + message + " write 4 related questions considering this context: " + declarative_memories_str + " Return the questions always in Italian and in a json format {\"questions\":[]}."))
             final_output["relatedquestions"] = related_questions
             
     # Return the modified final output
